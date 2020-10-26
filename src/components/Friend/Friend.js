@@ -11,7 +11,7 @@ const Friend = (props) => {
                 <h1>{name}</h1>
                 <p>{email}</p>
 
-                <button><Link to={`/friend/${id}`}>Friend Details</Link>
+                <button className="Main-button"><Link to={`/friend/${id}`}>Friend Details</Link>
                 </button>
             </div>
         </div>

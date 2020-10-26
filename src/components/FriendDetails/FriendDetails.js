@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import './FriendDetails.css';
 
 const FriendDetails = () => {
     const [friend, setFriendDetails] = useState({});
@@ -12,13 +13,15 @@ const FriendDetails = () => {
     }, [])
 
     return (
-        <div>
-            <h1>Friend Details : {friendId}</h1>
-            <div className="container">
+        <div className="main-container">
+            <h1 className="count">Friend Details and his ID :  {friendId}</h1>
+            <div className="container details-boxing">
                 <h1>Name : {friend.name}</h1>
                 <h2>Email : {friend.email}</h2>
-                <h2>Email : {friend.website}</h2>
-                <h2>Email : {friend.phone}</h2>
+                <h2>Website : {friend.website}</h2>
+                <h2>Contact Number : {friend.phone}</h2><br />
+                <br />
+                <button className="Main-button"><Link to="/">Main Page</Link></button>
             </div>
 
         </div>

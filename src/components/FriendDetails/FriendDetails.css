@@ -1,0 +1,24 @@
+.details-boxing {
+  border: 1px solid red;
+  padding: 30px;
+  margin: 50px 0px;
+  text-align: center;
+  box-shadow: 5px 5px 10px grey;
+}
+.main-container .count {
+  text-align: center;
+  background-color: azure;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.Main-button {
+  background-color: lightsalmon;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.Main-button a:link {
+  text-decoration: none;
+}
